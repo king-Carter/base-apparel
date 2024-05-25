@@ -19,7 +19,6 @@ footer{
 .logo{
     height:80px;
     width:100%;
-    background-color: #ffffff;
     display: flex;
     align-items: center;
     padding:0px 20px;
@@ -196,17 +195,25 @@ form{
         display: block;
         max-height: 100vh;
        max-width: 50vw;
+       
     }
     .base-apparel{
         display: flex;
     }
     .section-one{
         width:100%;
+        
+    }
+    body{
+        background-image: url(images/bg-pattern-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     .content{
         padding:70px 0px 40px 0px;
         max-width: 400px;
         margin: 0 0 0 60px;
+
     }
     h1{
         font-size: 45px;
@@ -218,7 +225,6 @@ form{
     .logo{
         height:80px;
         width:100%;
-        background-color: #ffffff;
         display: flex;
         align-items: center;
         padding:0px 60px;
