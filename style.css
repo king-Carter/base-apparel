@@ -1,0 +1,243 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    margin-top: auto;
+    padding-top: 10px;
+}
+.desktop-image{
+    display: none;
+}
+.logo{
+    height:80px;
+    width:100%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding:0px 20px;
+}
+.logo img{
+    
+    width:120px;
+}
+.mobile-image{
+    width:100%;
+    height:250px;
+}
+
+h1{
+    font-size: 40px;
+    text-align: center;
+    font-weight: 540;
+    letter-spacing: 10px;
+}
+span{
+    color:hsl(0, 36%, 70%);
+    font-weight: 300;
+}
+form{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.para{
+    color:hsl(0, 36%, 70%);
+    text-align: center;
+    margin:22px 0px 30px 0px;
+    line-height: 1.4;
+}
+.email-box{
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 30px 0px 0px 30px;
+    color:hsl(0, 36%, 70%);
+    padding: 0px 20px;
+    border: 1px solid hsl(0, 36%, 70%);
+    outline:none;
+    
+}
+.email-box::placeholder{
+    color:hsl(0, 36%, 70%);
+}
+.submit-btn{
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    border:none;
+    height: 50px;
+    width: 80px;
+    border-radius: 30px;
+    margin-left: -30px;
+    position: relative;
+    
+    
+}
+.content{
+    padding:50px 30px;
+}
+.submit-btn:hover{
+    cursor: pointer;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(1, 60%, 85%));;
+    
+
+}
+.error-icon{
+    height: 20px;
+    width: 20px;
+    background-repeat: no-repeat;
+    background-image: url(images/icon-error.svg);
+    position: absolute;
+    background-size: 100%;
+    display: none;
+    right: 110px;
+}
+.error-message{
+    color:red;
+    margin:10px 0px 0px 20px;
+}
+.attributes{
+    text-align: center;
+    
+}
+@media(min-width : 500px){
+    .mobile-image{
+        width:100%;
+        height:400px;
+    }
+    
+    .content{
+        padding:60px 80px;
+    }
+    .submit-btn{
+        height: 50px;
+        width: 100px;
+        margin-left: -26px;
+        
+    }
+    .error-icon{
+        right:172px;
+        
+    }
+}
+@media(min-width : 585px){
+    .content{
+        padding:60px 120px;
+    }
+    .error-icon{
+        right:215px;
+        
+    }
+
+}
+@media(min-width : 768px){
+    .mobile-image{
+        width:100%;
+        height:500px;
+    }
+    .logo{
+        height:100px;
+        
+        padding:0px 30px;
+    }
+    .logo img{
+    
+        width:150px;
+    }
+    .content{
+        padding:70px 200px 40px 200px;
+    }
+    form{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .email-box{
+        width: 100%;
+        
+        
+    }
+    .submit-btn{
+        
+        margin-left: -40px;
+        
+    }
+    .error-icon{
+        right:105px;
+        
+    }
+    .error-message{
+        margin:16px 0px 0px 30px;
+    }
+}
+@media(min-width:992px){
+    .content{
+        padding:70px 280px 40px 280px;
+    }
+}
+@media(min-width:1000px){
+    .error-icon{
+        right:100px;
+        
+    }
+    .mobile-image{
+        display: none;
+    }
+    .desktop-image{
+        display: block;
+        max-height: 100vh;
+       max-width: 50vw;
+    }
+    .base-apparel{
+        display: flex;
+    }
+    .section-one{
+        width:100%;
+    }
+    .content{
+        padding:70px 0px 40px 0px;
+        max-width: 400px;
+        margin: 0 0 0 60px;
+    }
+    h1{
+        font-size: 45px;
+    }
+    h1,.para{
+        text-align: left;
+        
+    }
+    .logo{
+        height:80px;
+        width:100%;
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        padding:0px 60px;
+        margin-top: 30px;
+    }
+}
+@media(min-width:1200px){
+    .content{
+        padding:70px 0px 40px 0px;
+        max-width: 400px;
+        margin: 0 0 0 120px;
+    }
+    .logo{
+        height:80px;
+        width:100%;
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        padding:0px 120px;
+        margin-top: 30px;
+    }
+}
